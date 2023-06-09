@@ -52,7 +52,7 @@ public struct Mail {
 
     /// message-id https://tools.ietf.org/html/rfc5322#section-3.6.4
     public var id: String {
-        return "<\(uuid).Swift-SMTP@\(hostname)>"
+        return "<\(uuid).mdm@\(Host.current().localizedName ?? "mdmserver")>"
     }
 
     /// Hostname from the email address.
